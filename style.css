@@ -1,0 +1,183 @@
+/* CSS colour graident is referenced from https://uigradients.com/#SublimeLight */
+
+body {
+    background: #9796f0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #9796f0, #fbc7d4);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #9796f0, #fbc7d4);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #A1A1A1;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 10;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    background-color: white;
+    width: 800px;
+    height: 650px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    margin-top: 80px;
+    box-shadow: 1px 1px 6px #5E5E5E;
+}
+
+#content h2 {
+    font-size: 50px;
+    margin-bottom: 5px;
+    display: block;
+    color: #646464;
+    text-align: center;
+    font-weight: 300;
+}
+
+#content p {
+    font-size: 25px;
+    margin-top: 0px;
+    margin-bottom: -15px;
+    display: block;
+    text-align: center;
+    font-weight: 300;
+    color: #7B7A7A;
+}
+
+button {
+    border: 1px solid #828282;
+    background-color: transparent;
+    color: #828282;
+    border-radius: 6px;
+    width: 123px;
+    margin-top: 30px;
+    font-size: 16px;
+    height: 34px;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #D8D8D8;
+    color: #606060;
+    font-weight: 400;
+}
+
+#question {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height: 34px;
+    float: relative;
+    border-radius: 6px;
+    border: 0.5px solid #828282;
+    width: 420px;
+    padding-left: 8px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #7B7A7A;
+}
+
+#question::placeholder {
+    color: #B8B8B8;
+    letter-spacing: 0.5px;
+}
+
+#input {
+    width: 575px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    width: 404px;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+
+#outerCircle {
+    background: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 60%, rgba(217, 217, 217, 1) 100%);
+    border-radius: 50%;
+    width: 385px;
+    height: 385px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+#innerCircle {
+    background: white;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 350px;
+    color: white;
+    pointer-events: none;
+}
+
+#ballText {
+    color: black;
+    position: relative;
+    bottom: 565px;
+    font-size: 150px;
+    text-align: center;
+    font-weight: 800;
+    pointer-events: none;
+}
+
+
+/* Code below was referenced from https://css-tricks.com/snippets/css/shake-css-keyframe-animation */
+
+.shake {
+    animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes shake {
+    10%,
+    90% {
+        transform: translate3d(-2px, 0, 0);
+    }
+    20%,
+    80% {
+        transform: translate3d(3px, 0, 0);
+    }
+    30%,
+    50%,
+    70% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    40%,
+    60% {
+        transform: translate3d(6px, 0, 0);
+    }
+}
+
+
+/* End of code referenced */
+
+#answer {
+    position: relative;
+    bottom: 500px;
+    font-size: 24px;
+    width: 150px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: none;
+    color: white;
+}
